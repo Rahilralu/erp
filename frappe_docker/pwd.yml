@@ -1,6 +1,6 @@
 services:
   backend:
-    image: ghcr.io/frappe/hrms:version-16   # CHANGED: was frappe/erpnext:v16.23.0
+    image: frappe/erpnext:v16.20.0
     networks:
       - frappe_network
     deploy:
@@ -16,7 +16,7 @@ services:
       MARIADB_ROOT_PASSWORD: admin
 
   configurator:
-    image: ghcr.io/frappe/hrms:version-16   # CHANGED
+    image: frappe/erpnext:v16.20.0
     networks:
       - frappe_network
     deploy:
@@ -45,7 +45,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   create-site:
-    image: ghcr.io/frappe/hrms:version-16   # CHANGED
+    image: frappe/erpnext:v16.20.0
     networks:
       - frappe_network
     deploy:
@@ -75,19 +75,20 @@ services:
           fi
         done;
         echo "sites/common_site_config.json found";
-        bench new-site --mariadb-user-host-login-scope='%' --admin-password=admin --db-root-username=root --db-root-password=admin --install-app erpnext --install-app hrms --set-default frontend;
-        # CHANGED: added --install-app hrms above
+        bench new-site --mariadb-user-host-login-scope='%' --admin-password=admin --db-root-username=root --db-root-password=admin --install-app erpnext --set-default frontend;
+        bench get-app --branch version-16 hrms;
+        bench --site frontend install-app hrms;
 
   db:
-    image: mariadb:11.8
+    image: mariadb:10.6
     networks:
       - frappe_network
     healthcheck:
-      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
-      start_period: 5s
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "--password=admin"]
+      start_period: 10s
       interval: 5s
       timeout: 5s
-      retries: 5
+      retries: 10
     deploy:
       restart_policy:
         condition: on-failure
@@ -102,7 +103,7 @@ services:
       - db-data:/var/lib/mysql
 
   frontend:
-    image: ghcr.io/frappe/hrms:version-16   # CHANGED
+    image: frappe/erpnext:v16.20.0
     networks:
       - frappe_network
     depends_on:
@@ -128,7 +129,7 @@ services:
       - "8080:8080"
 
   queue-long:
-    image: ghcr.io/frappe/hrms:version-16   # CHANGED
+    image: frappe/erpnext:v16.20.0
     networks:
       - frappe_network
     deploy:
@@ -147,7 +148,7 @@ services:
       FRAPPE_REDIS_QUEUE: redis://redis-queue:6379
 
   queue-short:
-    image: ghcr.io/frappe/hrms:version-16   # CHANGED
+    image: frappe/erpnext:v16.20.0
     networks:
       - frappe_network
     deploy:
@@ -184,7 +185,7 @@ services:
         condition: on-failure
 
   scheduler:
-    image: ghcr.io/frappe/hrms:version-16   # CHANGED
+    image: frappe/erpnext:v16.20.0
     networks:
       - frappe_network
     deploy:
@@ -198,7 +199,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   websocket:
-    image: ghcr.io/frappe/hrms:version-16   # CHANGED
+    image: frappe/erpnext:v16.20.0
     networks:
       - frappe_network
     deploy:
