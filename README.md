@@ -1,4 +1,4 @@
-# Cognifyr ERP Integration Setup Guide
+s# Cognifyr ERP Integration Setup Guide
 
 This repository contains the containerized ERPNext backend and the custom Nuxt 3/4 frontend application.
 
