@@ -1,0 +1,28 @@
+{
+  "name": "frappe_docker",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">   <img src=\"docs/public/frappe-docker.png\" alt=\"Frappe Docker\" width=\"80\" />   <h1>Frappe Docker</h1>   <p>Docker images and orchestration for Frappe applications.</p>   <p>     <a href=\"https://github.com/frappe/frappe_docker/actions/workflows/core-build-stable.yml\">       <img src=\"https://img.shields.io/github/actions/workflow/status/frappe/frappe_docker/core-build-stable.yml?branch=main&label=Build%20Stable\" alt=\"Build Stable\" />     </a>     <a href=\"https://github.com/frappe/frappe_docker/actions/workflows/core-build-develop.yml\">       <img src=\"https://img.shields.io/github/actions/workflow/status/frappe/frappe_docker/core-build-develop.yml?branch=main&label=Build%20Develop\" alt=\"Build Develop\" />     </a>     <a href=\"https://frappe.github.io/frappe_docker/\">       <img src=\"https://img.shields.io/badge/Docs-Open%20Site-0A7EA4\" alt=\"Docs\" />     </a>   </p> </div>",
+  "main": "seed.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frappe/frappe_docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frappe/frappe_docker/issues"
+  },
+  "homepage": "https://github.com/frappe/frappe_docker#readme",
+  "dependencies": {
+    "axios": "^1.18.0"
+  },
+  "type": "module"
+}
