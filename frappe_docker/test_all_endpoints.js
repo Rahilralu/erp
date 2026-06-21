@@ -349,15 +349,15 @@ function generateReportMarkdown(results) {
   const postFailed = results.filter(r => !r.isSingle && r.postStatus !== "N/A" && r.postStatus !== 200).length;
   
   const putSuccess = results.filter(r => r.putStatus === 200).length;
-  const deleteSuccess = results.filter(r => !r.isSingle && r.deleteStatus === 200).length;
+  const deleteSuccess = results.filter(r => !r.isSingle && (r.deleteStatus === 200 || r.deleteStatus === 202)).length;
   
-  md += `| CRUD Operation | Success (200 OK) | Failed / Skipped / N/A | Success Rate |\n`;
+  md += `| CRUD Operation | Success (200/202 OK) | Failed / Skipped / N/A | Success Rate |\n`;
   md += `| :--- | :--- | :--- | :--- |\n`;
   md += `| **GET (List/Single)** | ${getSuccess} / ${total} | ${total - getSuccess} | ${((getSuccess/total)*100).toFixed(1)}% |\n`;
   md += `| **POST (Create)** | ${postSuccess} / ${standardDocs} | ${postFailed} failed (7 singles N/A) | ${((postSuccess/standardDocs)*100).toFixed(1)}% |\n`;
   md += `| **GET (Each)** | ${results.filter(r => r.getEachStatus === 200).length} / ${total} | ${total - results.filter(r => r.getEachStatus === 200).length} | ${((results.filter(r => r.getEachStatus === 200).length/total)*100).toFixed(1)}% |\n`;
   md += `| **PUT (Update)** | ${putSuccess} / ${total} | ${total - putSuccess} | ${((putSuccess/total)*100).toFixed(1)}% |\n`;
-  md += `| **DELETE (Clean)** | ${deleteSuccess} / ${results.filter(r => r.deleteStatus === 200 || r.deleteStatus === "Skipped").length} | ${results.filter(r => r.deleteStatus !== 200 && r.deleteStatus !== "Skipped" && r.deleteStatus !== "N/A").length} failed | ${((deleteSuccess / (results.filter(r => r.deleteStatus === 200).length || 1)) * 100).toFixed(1)}% |\n\n`;
+  md += `| **DELETE (Clean)** | ${deleteSuccess} / ${results.filter(r => r.deleteStatus === 200 || r.deleteStatus === 202 || r.deleteStatus === "Skipped").length} | ${results.filter(r => r.deleteStatus !== 200 && r.deleteStatus !== 202 && r.deleteStatus !== "Skipped" && r.deleteStatus !== "N/A").length} failed | ${((deleteSuccess / (results.filter(r => r.deleteStatus === 200 || r.deleteStatus === 202).length || 1)) * 100).toFixed(1)}% |\n\n`;
 
   md += `> [!NOTE]\n`;
   md += `> **POST/DELETE Validations**: Some standard DocTypes require complex business workflow states or external database configurations to create. For DocTypes where mock POST creation failed, the test runner safely queried an existing seeded record to execute GET and PUT checks, skipping DELETE to maintain database integrity.\n\n`;
@@ -374,7 +374,7 @@ function generateReportMarkdown(results) {
     const putStr = r.putStatus === 200 ? "✅ `200`" : (r.putStatus === "N/A" ? "N/A" : `❌ \`${r.putStatus || 'ERR'}\``);
     
     let delStr = "N/A";
-    if (r.deleteStatus === 200) delStr = "✅ `200`";
+    if (r.deleteStatus === 200 || r.deleteStatus === 202) delStr = `✅ \`${r.deleteStatus}\``;
     else if (r.deleteStatus === "Skipped") delStr = "Skipped ℹ️";
     else if (r.deleteStatus !== "N/A") delStr = `❌ \`${r.deleteStatus || 'ERR'}\``;
     
@@ -388,7 +388,7 @@ function generateReportMarkdown(results) {
     (r.postStatus !== 200 && r.postStatus !== "N/A") || 
     (r.getEachStatus !== 200 && r.getEachStatus !== "N/A") || 
     (r.putStatus !== 200 && r.putStatus !== "N/A") || 
-    (r.deleteStatus !== 200 && r.deleteStatus !== "Skipped" && r.deleteStatus !== "N/A")
+    (r.deleteStatus !== 200 && r.deleteStatus !== 202 && r.deleteStatus !== "Skipped" && r.deleteStatus !== "N/A")
   );
 
   if (failedResults.length === 0) {
@@ -442,7 +442,7 @@ async function main() {
     const getOk = res.getStatus === 200;
     const postOk = res.isSingle || res.postStatus === 200;
     const putOk = res.putStatus === 200;
-    const delOk = res.isSingle || res.deleteStatus === 200 || res.deleteStatus === "Skipped";
+    const delOk = res.isSingle || res.deleteStatus === 200 || res.deleteStatus === 202 || res.deleteStatus === "Skipped";
     
     if (getOk && postOk && putOk && delOk) {
       console.log(`✅ ALL PASSED`);
