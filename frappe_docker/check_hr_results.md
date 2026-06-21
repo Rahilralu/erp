@@ -1,127 +1,136 @@
 # ERPNext HRMS API Verification Report
 
-Generated on: 2026-06-21T06:05:18.792Z
+Generated on: 2026-06-21T06:09:19.220Z
 Target Host: `http://localhost:8080`
 
 ## Summary Dashboard
 
 | Metric | Count | Percentage |
 | :--- | :--- | :--- |
-| **Total DocTypes Tested** | 100 | 100% |
-| **List API Accessible (200 OK)** | 100 | 100.0% |
-| **List API Failed / Unauthorized** | 0 | 0.0% |
-| **DocTypes with Seeded Records** | 27 | 27.0% |
-| **Empty DocTypes (0 records)** | 73 | 73.0% |
-| **Detail API Verified (200 OK)** | 27 | 100.0% (of seeded) |
+| **Total DocTypes Tested** | 107 | 100% |
+| **Standard DocTypes** | 100 | 93.5% |
+| **Single DocTypes** | 7 | 6.5% |
+| **List API Accessible (200 OK)** | 100 / 100 | 100.0% |
+| **Single API Accessible (200 OK)** | 7 / 7 | 100.0% |
+| **DocTypes with Seeded Records** | 27 | 27.0% (of standard) |
+| **Empty DocTypes (0 records)** | 73 | 73.0% (of standard) |
+| **Detail API Verified (200 OK)** | 34 | 100.0% (of records+singles) |
 
 ## Endpoint Status Table
 
-| DocType | Module | List Status | Records | Detail Status | Health |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Additional Salary** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Appointment Letter** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Appointment Letter Template** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Appraisal** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Appraisal Cycle** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Appraisal Template** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Arrear** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Attendance** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Attendance Request** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Compensatory Leave Request** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Daily Work Summary** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Daily Work Summary Group** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Advance** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Benefit Application** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Benefit Claim** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Benefit Ledger** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Checkin** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Feedback Criteria** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Grade** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Grievance** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Health Insurance** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Incentive** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Onboarding** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Onboarding Template** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Other Income** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Performance Feedback** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Promotion** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Referral** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Separation** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Separation Template** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Skill Map** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Tax Exemption Category** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Tax Exemption Declaration** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Tax Exemption Proof Submission** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Tax Exemption Sub Category** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employee Transfer** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Employment Type** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Exit Interview** | HR | `200 OK` | 2 | `200 OK` | ✅ Healthy |
-| **Expense Claim** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Expense Claim Type** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Full and Final Statement** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Goal** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Gratuity** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Gratuity Rule** | Payroll | `200 OK` | 1 | `200 OK` | ✅ Healthy |
-| **Grievance Type** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Holiday List Assignment** | HR | `200 OK` | 1 | `200 OK` | ✅ Healthy |
-| **Identification Document Type** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Income Tax Slab** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Interest** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Interview** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Interview Feedback** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Interview Round** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Interview Type** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Job Applicant** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Job Applicant Source** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Job Offer** | HR | `200 OK` | 1 | `200 OK` | ✅ Healthy |
-| **Job Offer Term Template** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Job Opening** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Job Opening Template** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Job Requisition** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **KRA** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Leave Adjustment** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Leave Allocation** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Leave Application** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Leave Block List** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Leave Encashment** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Leave Ledger Entry** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Leave Period** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Leave Policy** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Leave Policy Assignment** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Leave Type** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Offer Term** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Overtime Slip** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Overtime Type** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Payroll Correction** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Payroll Entry** | Payroll | `200 OK` | 1 | `200 OK` | ✅ Healthy |
-| **Payroll Period** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Purpose of Travel** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **PWA Notification** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Retention Bonus** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Salary Component** | Payroll | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Salary Slip** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Salary Structure** | Payroll | `200 OK` | 1 | `200 OK` | ✅ Healthy |
-| **Salary Structure Assignment** | Payroll | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Salary Withholding** | Payroll | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Shift Assignment** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Shift Location** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Shift Request** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Shift Schedule** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Shift Schedule Assignment** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Shift Type** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Skill** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Staffing Plan** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Training Event** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
-| **Training Feedback** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Training Program** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Training Result** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Travel Request** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Vehicle Log** | HR | `200 OK` | 0 | N/A | ℹ️ Empty |
-| **Vehicle Service Item** | HR | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| DocType | Module | Type | List Status | Records | Detail Status | Health |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Additional Salary** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Appointment Letter** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Appointment Letter Template** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Appraisal** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Appraisal Cycle** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Appraisal Template** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Arrear** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Attendance** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Attendance Request** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Bulk Salary Structure Assignment** | Payroll | Single | N/A | 1 | `200 OK` | ✅ Healthy |
+| **Compensatory Leave Request** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Daily Work Summary** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Daily Work Summary Group** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Advance** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Attendance Tool** | HR | Single | N/A | 1 | `200 OK` | ✅ Healthy |
+| **Employee Benefit Application** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Benefit Claim** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Benefit Ledger** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Checkin** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Feedback Criteria** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Grade** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Grievance** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Health Insurance** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Incentive** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Onboarding** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Onboarding Template** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Other Income** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Performance Feedback** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Promotion** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Referral** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Separation** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Separation Template** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Skill Map** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Tax Exemption Category** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Tax Exemption Declaration** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Tax Exemption Proof Submission** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Tax Exemption Sub Category** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employee Transfer** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Employment Type** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Exit Interview** | HR | Standard | `200 OK` | 2 | `200 OK` | ✅ Healthy |
+| **Expense Claim** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Expense Claim Type** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Full and Final Statement** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Goal** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Gratuity** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Gratuity Rule** | Payroll | Standard | `200 OK` | 1 | `200 OK` | ✅ Healthy |
+| **Grievance Type** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Holiday List Assignment** | HR | Standard | `200 OK` | 1 | `200 OK` | ✅ Healthy |
+| **HR Settings** | HR | Single | N/A | 1 | `200 OK` | ✅ Healthy |
+| **Identification Document Type** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Income Tax Slab** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Interest** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Interview** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Interview Feedback** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Interview Round** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Interview Type** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Job Applicant** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Job Applicant Source** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Job Offer** | HR | Standard | `200 OK` | 1 | `200 OK` | ✅ Healthy |
+| **Job Offer Term Template** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Job Opening** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Job Opening Template** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Job Requisition** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **KRA** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Leave Adjustment** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Leave Allocation** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Leave Application** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Leave Block List** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Leave Control Panel** | HR | Single | N/A | 1 | `200 OK` | ✅ Healthy |
+| **Leave Encashment** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Leave Ledger Entry** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Leave Period** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Leave Policy** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Leave Policy Assignment** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Leave Type** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Offer Term** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Overtime Slip** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Overtime Type** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Payroll Correction** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Payroll Entry** | Payroll | Standard | `200 OK` | 1 | `200 OK` | ✅ Healthy |
+| **Payroll Period** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Payroll Settings** | Payroll | Single | N/A | 1 | `200 OK` | ✅ Healthy |
+| **Purpose of Travel** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **PWA Notification** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Retention Bonus** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Salary Component** | Payroll | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Salary Slip** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Salary Structure** | Payroll | Standard | `200 OK` | 1 | `200 OK` | ✅ Healthy |
+| **Salary Structure Assignment** | Payroll | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Salary Withholding** | Payroll | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Shift Assignment** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Shift Assignment Tool** | HR | Single | N/A | 1 | `200 OK` | ✅ Healthy |
+| **Shift Location** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Shift Request** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Shift Schedule** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Shift Schedule Assignment** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Shift Type** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Skill** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Staffing Plan** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Training Event** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
+| **Training Feedback** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Training Program** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Training Result** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Travel Request** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Upload Attendance** | HR | Single | N/A | 1 | `200 OK` | ✅ Healthy |
+| **Vehicle Log** | HR | Standard | `200 OK` | 0 | N/A | ℹ️ Empty |
+| **Vehicle Service Item** | HR | Standard | `200 OK` | 3 | `200 OK` | ✅ Healthy |
 
 ## Detailed Response & Body Validations
 
-### Additional Salary (`Payroll`)
+### Additional Salary (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Additional%20Salary`
 - **Status**: `200 OK`
@@ -131,7 +140,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Appointment Letter (`HR`)
+### Appointment Letter (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Appointment%20Letter`
 - **Status**: `200 OK`
@@ -141,7 +150,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Appointment Letter Template (`HR`)
+### Appointment Letter Template (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Appointment%20Letter%20Template`
 - **Status**: `200 OK`
@@ -151,7 +160,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Appraisal (`HR`)
+### Appraisal (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Appraisal`
 - **Status**: `200 OK`
@@ -161,7 +170,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Appraisal Cycle (`HR`)
+### Appraisal Cycle (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Appraisal%20Cycle`
 - **Status**: `200 OK`
@@ -171,7 +180,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Appraisal Template (`HR`)
+### Appraisal Template (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Appraisal%20Template`
 - **Status**: `200 OK`
@@ -181,7 +190,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Arrear (`Payroll`)
+### Arrear (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Arrear`
 - **Status**: `200 OK`
@@ -191,7 +200,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Attendance (`HR`)
+### Attendance (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Attendance`
 - **Status**: `200 OK`
@@ -258,7 +267,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Attendance Request (`HR`)
+### Attendance Request (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Attendance%20Request`
 - **Status**: `200 OK`
@@ -268,7 +277,45 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Compensatory Leave Request (`HR`)
+### Bulk Salary Structure Assignment (`Payroll` - Single)
+
+- **Detail Endpoint**: `GET /api/resource/Bulk%20Salary%20Structure%20Assignment/Bulk%20Salary%20Structure%20Assignment`
+- **Detail Status**: `200`
+- **Response Body Validation**: ✅ Valid Frappe Doc Schema
+
+#### Fields Present in Response Body:
+
+```json
+[
+  "name",
+  "owner",
+  "modified",
+  "modified_by",
+  "docstatus",
+  "idx",
+  "currency",
+  "doctype"
+]
+```
+
+#### Sample Response Data:
+
+```json
+{
+  "name": "Bulk Salary Structure Assignment",
+  "owner": "Administrator",
+  "modified": "2026-06-19 12:43:27.313622",
+  "modified_by": "Administrator",
+  "docstatus": 0,
+  "idx": "0",
+  "currency": "INR",
+  "doctype": "Bulk Salary Structure Assignment"
+}
+```
+
+---
+
+### Compensatory Leave Request (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Compensatory%20Leave%20Request`
 - **Status**: `200 OK`
@@ -278,7 +325,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Daily Work Summary (`HR`)
+### Daily Work Summary (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Daily%20Work%20Summary`
 - **Status**: `200 OK`
@@ -288,7 +335,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Daily Work Summary Group (`HR`)
+### Daily Work Summary Group (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Daily%20Work%20Summary%20Group`
 - **Status**: `200 OK`
@@ -298,7 +345,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Advance (`HR`)
+### Employee Advance (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Advance`
 - **Status**: `200 OK`
@@ -308,7 +355,55 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Benefit Application (`Payroll`)
+### Employee Attendance Tool (`HR` - Single)
+
+- **Detail Endpoint**: `GET /api/resource/Employee%20Attendance%20Tool/Employee%20Attendance%20Tool`
+- **Detail Status**: `200`
+- **Response Body Validation**: ✅ Valid Frappe Doc Schema
+
+#### Fields Present in Response Body:
+
+```json
+[
+  "name",
+  "owner",
+  "modified",
+  "modified_by",
+  "docstatus",
+  "idx",
+  "date",
+  "late_entry",
+  "early_exit",
+  "filter_by_shift",
+  "status",
+  "half_day_status",
+  "doctype"
+]
+```
+
+#### Sample Response Data:
+
+```json
+{
+  "name": "Employee Attendance Tool",
+  "owner": "Administrator",
+  "modified": "2026-06-19 12:43:27.476715",
+  "modified_by": "Administrator",
+  "docstatus": 0,
+  "idx": "0",
+  "date": "2026-06-19",
+  "late_entry": 0,
+  "early_exit": 0,
+  "filter_by_shift": 0,
+  "status": "",
+  "half_day_status": "Present",
+  "doctype": "Employee Attendance Tool"
+}
+```
+
+---
+
+### Employee Benefit Application (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Benefit%20Application`
 - **Status**: `200 OK`
@@ -318,7 +413,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Benefit Claim (`Payroll`)
+### Employee Benefit Claim (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Benefit%20Claim`
 - **Status**: `200 OK`
@@ -328,7 +423,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Benefit Ledger (`Payroll`)
+### Employee Benefit Ledger (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Benefit%20Ledger`
 - **Status**: `200 OK`
@@ -338,7 +433,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Checkin (`HR`)
+### Employee Checkin (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Checkin`
 - **Status**: `200 OK`
@@ -348,7 +443,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Feedback Criteria (`HR`)
+### Employee Feedback Criteria (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Feedback%20Criteria`
 - **Status**: `200 OK`
@@ -358,7 +453,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Grade (`HR`)
+### Employee Grade (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Grade`
 - **Status**: `200 OK`
@@ -368,7 +463,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Grievance (`HR`)
+### Employee Grievance (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Grievance`
 - **Status**: `200 OK`
@@ -378,7 +473,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Health Insurance (`HR`)
+### Employee Health Insurance (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Health%20Insurance`
 - **Status**: `200 OK`
@@ -388,7 +483,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Incentive (`Payroll`)
+### Employee Incentive (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Incentive`
 - **Status**: `200 OK`
@@ -398,7 +493,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Onboarding (`HR`)
+### Employee Onboarding (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Onboarding`
 - **Status**: `200 OK`
@@ -408,7 +503,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Onboarding Template (`HR`)
+### Employee Onboarding Template (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Onboarding%20Template`
 - **Status**: `200 OK`
@@ -418,7 +513,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Other Income (`Payroll`)
+### Employee Other Income (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Other%20Income`
 - **Status**: `200 OK`
@@ -428,7 +523,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Performance Feedback (`HR`)
+### Employee Performance Feedback (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Performance%20Feedback`
 - **Status**: `200 OK`
@@ -438,7 +533,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Promotion (`HR`)
+### Employee Promotion (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Promotion`
 - **Status**: `200 OK`
@@ -448,7 +543,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Referral (`HR`)
+### Employee Referral (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Referral`
 - **Status**: `200 OK`
@@ -458,7 +553,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Separation (`HR`)
+### Employee Separation (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Separation`
 - **Status**: `200 OK`
@@ -468,7 +563,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Separation Template (`HR`)
+### Employee Separation Template (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Separation%20Template`
 - **Status**: `200 OK`
@@ -478,7 +573,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Skill Map (`HR`)
+### Employee Skill Map (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Skill%20Map`
 - **Status**: `200 OK`
@@ -488,7 +583,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Tax Exemption Category (`Payroll`)
+### Employee Tax Exemption Category (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Tax%20Exemption%20Category`
 - **Status**: `200 OK`
@@ -498,7 +593,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Tax Exemption Declaration (`Payroll`)
+### Employee Tax Exemption Declaration (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Tax%20Exemption%20Declaration`
 - **Status**: `200 OK`
@@ -508,7 +603,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Tax Exemption Proof Submission (`Payroll`)
+### Employee Tax Exemption Proof Submission (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Tax%20Exemption%20Proof%20Submission`
 - **Status**: `200 OK`
@@ -518,7 +613,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Tax Exemption Sub Category (`Payroll`)
+### Employee Tax Exemption Sub Category (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Tax%20Exemption%20Sub%20Category`
 - **Status**: `200 OK`
@@ -528,7 +623,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employee Transfer (`HR`)
+### Employee Transfer (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employee%20Transfer`
 - **Status**: `200 OK`
@@ -538,7 +633,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Employment Type (`HR`)
+### Employment Type (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Employment%20Type`
 - **Status**: `200 OK`
@@ -581,7 +676,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Exit Interview (`HR`)
+### Exit Interview (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Exit%20Interview`
 - **Status**: `200 OK`
@@ -650,7 +745,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Expense Claim (`HR`)
+### Expense Claim (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Expense%20Claim`
 - **Status**: `200 OK`
@@ -769,7 +864,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Expense Claim Type (`HR`)
+### Expense Claim Type (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Expense%20Claim%20Type`
 - **Status**: `200 OK`
@@ -816,7 +911,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Full and Final Statement (`HR`)
+### Full and Final Statement (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Full%20and%20Final%20Statement`
 - **Status**: `200 OK`
@@ -826,7 +921,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Goal (`HR`)
+### Goal (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Goal`
 - **Status**: `200 OK`
@@ -836,7 +931,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Gratuity (`Payroll`)
+### Gratuity (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Gratuity`
 - **Status**: `200 OK`
@@ -846,7 +941,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Gratuity Rule (`Payroll`)
+### Gratuity Rule (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Gratuity%20Rule`
 - **Status**: `200 OK`
@@ -918,7 +1013,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Grievance Type (`HR`)
+### Grievance Type (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Grievance%20Type`
 - **Status**: `200 OK`
@@ -928,7 +1023,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Holiday List Assignment (`HR`)
+### Holiday List Assignment (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Holiday%20List%20Assignment`
 - **Status**: `200 OK`
@@ -983,7 +1078,87 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Identification Document Type (`HR`)
+### HR Settings (`HR` - Single)
+
+- **Detail Endpoint**: `GET /api/resource/HR%20Settings/HR%20Settings`
+- **Detail Status**: `200`
+- **Response Body Validation**: ✅ Valid Frappe Doc Schema
+
+#### Fields Present in Response Body:
+
+```json
+[
+  "name",
+  "owner",
+  "modified",
+  "modified_by",
+  "docstatus",
+  "idx",
+  "emp_created_by",
+  "standard_working_hours",
+  "send_work_anniversary_reminders",
+  "send_birthday_reminders",
+  "send_holiday_reminders",
+  "frequency",
+  "auto_leave_encashment",
+  "leave_approver_mandatory_in_leave_application",
+  "prevent_self_leave_approval",
+  "show_leaves_of_all_department_members_in_calendar",
+  "send_leave_notification",
+  "restrict_backdated_leave_application",
+  "expense_approver_mandatory_in_expense_claim",
+  "prevent_self_expense_approval",
+  "unlink_payment_on_cancellation_of_employee_advance",
+  "allow_multiple_shift_assignments",
+  "allow_employee_checkin_from_mobile_app",
+  "allow_geolocation_tracking",
+  "check_vacancies",
+  "send_interview_reminder",
+  "remind_before",
+  "send_interview_feedback_reminder",
+  "doctype"
+]
+```
+
+#### Sample Response Data:
+
+```json
+{
+  "name": "HR Settings",
+  "owner": "Administrator",
+  "modified": "2026-06-19 12:43:36.847678",
+  "modified_by": "Administrator",
+  "docstatus": 0,
+  "idx": "0",
+  "emp_created_by": "Naming Series",
+  "standard_working_hours": 0,
+  "send_work_anniversary_reminders": 1,
+  "send_birthday_reminders": 0,
+  "send_holiday_reminders": 1,
+  "frequency": "Weekly",
+  "auto_leave_encashment": 0,
+  "leave_approver_mandatory_in_leave_application": 1,
+  "prevent_self_leave_approval": 0,
+  "show_leaves_of_all_department_members_in_calendar": 0,
+  "send_leave_notification": 1,
+  "restrict_backdated_leave_application": 0,
+  "expense_approver_mandatory_in_expense_claim": 1,
+  "prevent_self_expense_approval": 0,
+  "unlink_payment_on_cancellation_of_employee_advance": 0,
+  "allow_multiple_shift_assignments": 0,
+  "allow_employee_checkin_from_mobile_app": 1,
+  "allow_geolocation_tracking": 0,
+  "check_vacancies": 0,
+  "send_interview_reminder": 0,
+  "remind_before": "00:15:00",
+  "send_interview_feedback_reminder": 0,
+  "doctype": "HR Settings"
+}
+```
+
+---
+
+### Identification Document Type (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Identification%20Document%20Type`
 - **Status**: `200 OK`
@@ -993,7 +1168,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Income Tax Slab (`Payroll`)
+### Income Tax Slab (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Income%20Tax%20Slab`
 - **Status**: `200 OK`
@@ -1003,7 +1178,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Interest (`HR`)
+### Interest (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Interest`
 - **Status**: `200 OK`
@@ -1013,7 +1188,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Interview (`HR`)
+### Interview (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Interview`
 - **Status**: `200 OK`
@@ -1023,7 +1198,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Interview Feedback (`HR`)
+### Interview Feedback (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Interview%20Feedback`
 - **Status**: `200 OK`
@@ -1033,7 +1208,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Interview Round (`HR`)
+### Interview Round (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Interview%20Round`
 - **Status**: `200 OK`
@@ -1043,7 +1218,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Interview Type (`HR`)
+### Interview Type (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Interview%20Type`
 - **Status**: `200 OK`
@@ -1053,7 +1228,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Job Applicant (`HR`)
+### Job Applicant (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Job%20Applicant`
 - **Status**: `200 OK`
@@ -1114,7 +1289,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Job Applicant Source (`HR`)
+### Job Applicant Source (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Job%20Applicant%20Source`
 - **Status**: `200 OK`
@@ -1157,7 +1332,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Job Offer (`HR`)
+### Job Offer (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Job%20Offer`
 - **Status**: `200 OK`
@@ -1214,7 +1389,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Job Offer Term Template (`HR`)
+### Job Offer Term Template (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Job%20Offer%20Term%20Template`
 - **Status**: `200 OK`
@@ -1224,7 +1399,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Job Opening (`HR`)
+### Job Opening (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Job%20Opening`
 - **Status**: `200 OK`
@@ -1297,7 +1472,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Job Opening Template (`HR`)
+### Job Opening Template (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Job%20Opening%20Template`
 - **Status**: `200 OK`
@@ -1307,7 +1482,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Job Requisition (`HR`)
+### Job Requisition (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Job%20Requisition`
 - **Status**: `200 OK`
@@ -1317,7 +1492,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### KRA (`HR`)
+### KRA (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/KRA`
 - **Status**: `200 OK`
@@ -1327,7 +1502,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Adjustment (`HR`)
+### Leave Adjustment (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Adjustment`
 - **Status**: `200 OK`
@@ -1337,7 +1512,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Allocation (`HR`)
+### Leave Allocation (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Allocation`
 - **Status**: `200 OK`
@@ -1410,7 +1585,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Application (`HR`)
+### Leave Application (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Application`
 - **Status**: `200 OK`
@@ -1483,7 +1658,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Block List (`HR`)
+### Leave Block List (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Block%20List`
 - **Status**: `200 OK`
@@ -1493,7 +1668,53 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Encashment (`HR`)
+### Leave Control Panel (`HR` - Single)
+
+- **Detail Endpoint**: `GET /api/resource/Leave%20Control%20Panel/Leave%20Control%20Panel`
+- **Detail Status**: `200`
+- **Response Body Validation**: ✅ Valid Frappe Doc Schema
+
+#### Fields Present in Response Body:
+
+```json
+[
+  "name",
+  "owner",
+  "modified",
+  "modified_by",
+  "docstatus",
+  "idx",
+  "dates_based_on",
+  "from_date",
+  "carry_forward",
+  "allocate_based_on_leave_policy",
+  "no_of_days",
+  "doctype"
+]
+```
+
+#### Sample Response Data:
+
+```json
+{
+  "name": "Leave Control Panel",
+  "owner": "Administrator",
+  "modified": "2026-06-19 12:43:27.598723",
+  "modified_by": "Administrator",
+  "docstatus": 0,
+  "idx": "0",
+  "dates_based_on": "Leave Period",
+  "from_date": "2026-06-19",
+  "carry_forward": 1,
+  "allocate_based_on_leave_policy": 1,
+  "no_of_days": 0,
+  "doctype": "Leave Control Panel"
+}
+```
+
+---
+
+### Leave Encashment (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Encashment`
 - **Status**: `200 OK`
@@ -1503,7 +1724,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Ledger Entry (`HR`)
+### Leave Ledger Entry (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Ledger%20Entry`
 - **Status**: `200 OK`
@@ -1568,7 +1789,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Period (`HR`)
+### Leave Period (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Period`
 - **Status**: `200 OK`
@@ -1578,7 +1799,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Policy (`HR`)
+### Leave Policy (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Policy`
 - **Status**: `200 OK`
@@ -1759,7 +1980,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Policy Assignment (`HR`)
+### Leave Policy Assignment (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Policy%20Assignment`
 - **Status**: `200 OK`
@@ -1818,7 +2039,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Leave Type (`HR`)
+### Leave Type (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Leave%20Type`
 - **Status**: `200 OK`
@@ -1903,7 +2124,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Offer Term (`HR`)
+### Offer Term (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Offer%20Term`
 - **Status**: `200 OK`
@@ -1946,7 +2167,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Overtime Slip (`HR`)
+### Overtime Slip (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Overtime%20Slip`
 - **Status**: `200 OK`
@@ -1956,7 +2177,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Overtime Type (`HR`)
+### Overtime Type (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Overtime%20Type`
 - **Status**: `200 OK`
@@ -1966,7 +2187,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Payroll Correction (`Payroll`)
+### Payroll Correction (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Payroll%20Correction`
 - **Status**: `200 OK`
@@ -1976,7 +2197,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Payroll Entry (`Payroll`)
+### Payroll Entry (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Payroll%20Entry`
 - **Status**: `200 OK`
@@ -2160,7 +2381,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Payroll Period (`Payroll`)
+### Payroll Period (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Payroll%20Period`
 - **Status**: `200 OK`
@@ -2170,7 +2391,69 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Purpose of Travel (`HR`)
+### Payroll Settings (`Payroll` - Single)
+
+- **Detail Endpoint**: `GET /api/resource/Payroll%20Settings/Payroll%20Settings`
+- **Detail Status**: `200`
+- **Response Body Validation**: ✅ Valid Frappe Doc Schema
+
+#### Fields Present in Response Body:
+
+```json
+[
+  "name",
+  "owner",
+  "modified",
+  "modified_by",
+  "docstatus",
+  "idx",
+  "payroll_based_on",
+  "consider_unmarked_attendance_as",
+  "include_holidays_in_total_working_days",
+  "consider_marked_attendance_on_holidays",
+  "max_working_hours_against_timesheet",
+  "daily_wages_fraction_for_half_day",
+  "disable_rounded_total",
+  "show_leave_balances_in_salary_slip",
+  "email_salary_slip_to_employee",
+  "encrypt_salary_slips_in_emails",
+  "process_payroll_accounting_entry_based_on_employee",
+  "mandatory_benefit_application",
+  "create_overtime_slip",
+  "doctype"
+]
+```
+
+#### Sample Response Data:
+
+```json
+{
+  "name": "Payroll Settings",
+  "owner": "Administrator",
+  "modified": "2026-06-19 12:43:27.340537",
+  "modified_by": "Administrator",
+  "docstatus": 0,
+  "idx": "0",
+  "payroll_based_on": "Leave",
+  "consider_unmarked_attendance_as": "Present",
+  "include_holidays_in_total_working_days": 0,
+  "consider_marked_attendance_on_holidays": 0,
+  "max_working_hours_against_timesheet": 0,
+  "daily_wages_fraction_for_half_day": 0.5,
+  "disable_rounded_total": 0,
+  "show_leave_balances_in_salary_slip": 0,
+  "email_salary_slip_to_employee": 1,
+  "encrypt_salary_slips_in_emails": 0,
+  "process_payroll_accounting_entry_based_on_employee": 0,
+  "mandatory_benefit_application": 0,
+  "create_overtime_slip": 0,
+  "doctype": "Payroll Settings"
+}
+```
+
+---
+
+### Purpose of Travel (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Purpose%20of%20Travel`
 - **Status**: `200 OK`
@@ -2180,7 +2463,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### PWA Notification (`HR`)
+### PWA Notification (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/PWA%20Notification`
 - **Status**: `200 OK`
@@ -2231,7 +2514,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Retention Bonus (`Payroll`)
+### Retention Bonus (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Retention%20Bonus`
 - **Status**: `200 OK`
@@ -2241,7 +2524,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Salary Component (`Payroll`)
+### Salary Component (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Salary%20Component`
 - **Status**: `200 OK`
@@ -2332,7 +2615,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Salary Slip (`Payroll`)
+### Salary Slip (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Salary%20Slip`
 - **Status**: `200 OK`
@@ -2342,7 +2625,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Salary Structure (`Payroll`)
+### Salary Structure (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Salary%20Structure`
 - **Status**: `200 OK`
@@ -2557,7 +2840,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Salary Structure Assignment (`Payroll`)
+### Salary Structure Assignment (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Salary%20Structure%20Assignment`
 - **Status**: `200 OK`
@@ -2634,7 +2917,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Salary Withholding (`Payroll`)
+### Salary Withholding (`Payroll` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Salary%20Withholding`
 - **Status**: `200 OK`
@@ -2644,7 +2927,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Shift Assignment (`HR`)
+### Shift Assignment (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Shift%20Assignment`
 - **Status**: `200 OK`
@@ -2699,7 +2982,47 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Shift Location (`HR`)
+### Shift Assignment Tool (`HR` - Single)
+
+- **Detail Endpoint**: `GET /api/resource/Shift%20Assignment%20Tool/Shift%20Assignment%20Tool`
+- **Detail Status**: `200`
+- **Response Body Validation**: ✅ Valid Frappe Doc Schema
+
+#### Fields Present in Response Body:
+
+```json
+[
+  "name",
+  "owner",
+  "modified",
+  "modified_by",
+  "docstatus",
+  "idx",
+  "action",
+  "status",
+  "doctype"
+]
+```
+
+#### Sample Response Data:
+
+```json
+{
+  "name": "Shift Assignment Tool",
+  "owner": "Administrator",
+  "modified": "2026-06-19 12:43:27.299928",
+  "modified_by": "Administrator",
+  "docstatus": 0,
+  "idx": "0",
+  "action": "Assign Shift",
+  "status": "Active",
+  "doctype": "Shift Assignment Tool"
+}
+```
+
+---
+
+### Shift Location (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Shift%20Location`
 - **Status**: `200 OK`
@@ -2709,7 +3032,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Shift Request (`HR`)
+### Shift Request (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Shift%20Request`
 - **Status**: `200 OK`
@@ -2719,7 +3042,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Shift Schedule (`HR`)
+### Shift Schedule (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Shift%20Schedule`
 - **Status**: `200 OK`
@@ -2729,7 +3052,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Shift Schedule Assignment (`HR`)
+### Shift Schedule Assignment (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Shift%20Schedule%20Assignment`
 - **Status**: `200 OK`
@@ -2739,7 +3062,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Shift Type (`HR`)
+### Shift Type (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Shift%20Type`
 - **Status**: `200 OK`
@@ -2816,7 +3139,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Skill (`HR`)
+### Skill (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Skill`
 - **Status**: `200 OK`
@@ -2826,7 +3149,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Staffing Plan (`HR`)
+### Staffing Plan (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Staffing%20Plan`
 - **Status**: `200 OK`
@@ -2836,7 +3159,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Training Event (`HR`)
+### Training Event (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Training%20Event`
 - **Status**: `200 OK`
@@ -2903,7 +3226,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Training Feedback (`HR`)
+### Training Feedback (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Training%20Feedback`
 - **Status**: `200 OK`
@@ -2913,7 +3236,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Training Program (`HR`)
+### Training Program (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Training%20Program`
 - **Status**: `200 OK`
@@ -2923,7 +3246,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Training Result (`HR`)
+### Training Result (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Training%20Result`
 - **Status**: `200 OK`
@@ -2933,7 +3256,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Travel Request (`HR`)
+### Travel Request (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Travel%20Request`
 - **Status**: `200 OK`
@@ -2943,7 +3266,43 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Vehicle Log (`HR`)
+### Upload Attendance (`HR` - Single)
+
+- **Detail Endpoint**: `GET /api/resource/Upload%20Attendance/Upload%20Attendance`
+- **Detail Status**: `200`
+- **Response Body Validation**: ✅ Valid Frappe Doc Schema
+
+#### Fields Present in Response Body:
+
+```json
+[
+  "name",
+  "owner",
+  "modified",
+  "modified_by",
+  "docstatus",
+  "idx",
+  "doctype"
+]
+```
+
+#### Sample Response Data:
+
+```json
+{
+  "name": "Upload Attendance",
+  "owner": "Administrator",
+  "modified": "2026-06-19 12:43:27.586492",
+  "modified_by": "Administrator",
+  "docstatus": 0,
+  "idx": "0",
+  "doctype": "Upload Attendance"
+}
+```
+
+---
+
+### Vehicle Log (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Vehicle%20Log`
 - **Status**: `200 OK`
@@ -2953,7 +3312,7 @@ Target Host: `http://localhost:8080`
 
 ---
 
-### Vehicle Service Item (`HR`)
+### Vehicle Service Item (`HR` - Standard)
 
 - **List Endpoint**: `GET /api/resource/Vehicle%20Service%20Item`
 - **Status**: `200 OK`

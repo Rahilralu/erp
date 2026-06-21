@@ -2,6 +2,7 @@
   {
     "name": "Additional Salary",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Additional%20Salary",
     "listStatus": 200,
     "listError": null,
@@ -17,6 +18,7 @@
   {
     "name": "Appointment Letter",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Appointment%20Letter",
     "listStatus": 200,
     "listError": null,
@@ -32,6 +34,7 @@
   {
     "name": "Appointment Letter Template",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Appointment%20Letter%20Template",
     "listStatus": 200,
     "listError": null,
@@ -47,6 +50,7 @@
   {
     "name": "Appraisal",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Appraisal",
     "listStatus": 200,
     "listError": null,
@@ -62,6 +66,7 @@
   {
     "name": "Appraisal Cycle",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Appraisal%20Cycle",
     "listStatus": 200,
     "listError": null,
@@ -77,6 +82,7 @@
   {
     "name": "Appraisal Template",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Appraisal%20Template",
     "listStatus": 200,
     "listError": null,
@@ -92,6 +98,7 @@
   {
     "name": "Arrear",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Arrear",
     "listStatus": 200,
     "listError": null,
@@ -107,6 +114,7 @@
   {
     "name": "Attendance",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Attendance",
     "listStatus": 200,
     "listError": null,
@@ -176,6 +184,7 @@
   {
     "name": "Attendance Request",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Attendance%20Request",
     "listStatus": 200,
     "listError": null,
@@ -189,8 +198,43 @@
     "isValid": true
   },
   {
+    "name": "Bulk Salary Structure Assignment",
+    "module": "Payroll",
+    "isSingle": true,
+    "listEndpoint": null,
+    "listStatus": null,
+    "listError": null,
+    "recordCount": 1,
+    "records": [],
+    "detailEndpoint": "/api/resource/Bulk%20Salary%20Structure%20Assignment/Bulk%20Salary%20Structure%20Assignment",
+    "detailStatus": 200,
+    "detailError": null,
+    "fields": [
+      "name",
+      "owner",
+      "modified",
+      "modified_by",
+      "docstatus",
+      "idx",
+      "currency",
+      "doctype"
+    ],
+    "sampleData": {
+      "name": "Bulk Salary Structure Assignment",
+      "owner": "Administrator",
+      "modified": "2026-06-19 12:43:27.313622",
+      "modified_by": "Administrator",
+      "docstatus": 0,
+      "idx": "0",
+      "currency": "INR",
+      "doctype": "Bulk Salary Structure Assignment"
+    },
+    "isValid": true
+  },
+  {
     "name": "Compensatory Leave Request",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Compensatory%20Leave%20Request",
     "listStatus": 200,
     "listError": null,
@@ -206,6 +250,7 @@
   {
     "name": "Daily Work Summary",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Daily%20Work%20Summary",
     "listStatus": 200,
     "listError": null,
@@ -221,6 +266,7 @@
   {
     "name": "Daily Work Summary Group",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Daily%20Work%20Summary%20Group",
     "listStatus": 200,
     "listError": null,
@@ -236,6 +282,7 @@
   {
     "name": "Employee Advance",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Advance",
     "listStatus": 200,
     "listError": null,
@@ -249,8 +296,53 @@
     "isValid": true
   },
   {
+    "name": "Employee Attendance Tool",
+    "module": "HR",
+    "isSingle": true,
+    "listEndpoint": null,
+    "listStatus": null,
+    "listError": null,
+    "recordCount": 1,
+    "records": [],
+    "detailEndpoint": "/api/resource/Employee%20Attendance%20Tool/Employee%20Attendance%20Tool",
+    "detailStatus": 200,
+    "detailError": null,
+    "fields": [
+      "name",
+      "owner",
+      "modified",
+      "modified_by",
+      "docstatus",
+      "idx",
+      "date",
+      "late_entry",
+      "early_exit",
+      "filter_by_shift",
+      "status",
+      "half_day_status",
+      "doctype"
+    ],
+    "sampleData": {
+      "name": "Employee Attendance Tool",
+      "owner": "Administrator",
+      "modified": "2026-06-19 12:43:27.476715",
+      "modified_by": "Administrator",
+      "docstatus": 0,
+      "idx": "0",
+      "date": "2026-06-19",
+      "late_entry": 0,
+      "early_exit": 0,
+      "filter_by_shift": 0,
+      "status": "",
+      "half_day_status": "Present",
+      "doctype": "Employee Attendance Tool"
+    },
+    "isValid": true
+  },
+  {
     "name": "Employee Benefit Application",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Benefit%20Application",
     "listStatus": 200,
     "listError": null,
@@ -266,6 +358,7 @@
   {
     "name": "Employee Benefit Claim",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Benefit%20Claim",
     "listStatus": 200,
     "listError": null,
@@ -281,6 +374,7 @@
   {
     "name": "Employee Benefit Ledger",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Benefit%20Ledger",
     "listStatus": 200,
     "listError": null,
@@ -296,6 +390,7 @@
   {
     "name": "Employee Checkin",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Checkin",
     "listStatus": 200,
     "listError": null,
@@ -311,6 +406,7 @@
   {
     "name": "Employee Feedback Criteria",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Feedback%20Criteria",
     "listStatus": 200,
     "listError": null,
@@ -326,6 +422,7 @@
   {
     "name": "Employee Grade",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Grade",
     "listStatus": 200,
     "listError": null,
@@ -341,6 +438,7 @@
   {
     "name": "Employee Grievance",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Grievance",
     "listStatus": 200,
     "listError": null,
@@ -356,6 +454,7 @@
   {
     "name": "Employee Health Insurance",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Health%20Insurance",
     "listStatus": 200,
     "listError": null,
@@ -371,6 +470,7 @@
   {
     "name": "Employee Incentive",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Incentive",
     "listStatus": 200,
     "listError": null,
@@ -386,6 +486,7 @@
   {
     "name": "Employee Onboarding",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Onboarding",
     "listStatus": 200,
     "listError": null,
@@ -401,6 +502,7 @@
   {
     "name": "Employee Onboarding Template",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Onboarding%20Template",
     "listStatus": 200,
     "listError": null,
@@ -416,6 +518,7 @@
   {
     "name": "Employee Other Income",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Other%20Income",
     "listStatus": 200,
     "listError": null,
@@ -431,6 +534,7 @@
   {
     "name": "Employee Performance Feedback",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Performance%20Feedback",
     "listStatus": 200,
     "listError": null,
@@ -446,6 +550,7 @@
   {
     "name": "Employee Promotion",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Promotion",
     "listStatus": 200,
     "listError": null,
@@ -461,6 +566,7 @@
   {
     "name": "Employee Referral",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Referral",
     "listStatus": 200,
     "listError": null,
@@ -476,6 +582,7 @@
   {
     "name": "Employee Separation",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Separation",
     "listStatus": 200,
     "listError": null,
@@ -491,6 +598,7 @@
   {
     "name": "Employee Separation Template",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Separation%20Template",
     "listStatus": 200,
     "listError": null,
@@ -506,6 +614,7 @@
   {
     "name": "Employee Skill Map",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Skill%20Map",
     "listStatus": 200,
     "listError": null,
@@ -521,6 +630,7 @@
   {
     "name": "Employee Tax Exemption Category",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Tax%20Exemption%20Category",
     "listStatus": 200,
     "listError": null,
@@ -536,6 +646,7 @@
   {
     "name": "Employee Tax Exemption Declaration",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Tax%20Exemption%20Declaration",
     "listStatus": 200,
     "listError": null,
@@ -551,6 +662,7 @@
   {
     "name": "Employee Tax Exemption Proof Submission",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Tax%20Exemption%20Proof%20Submission",
     "listStatus": 200,
     "listError": null,
@@ -566,6 +678,7 @@
   {
     "name": "Employee Tax Exemption Sub Category",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Tax%20Exemption%20Sub%20Category",
     "listStatus": 200,
     "listError": null,
@@ -581,6 +694,7 @@
   {
     "name": "Employee Transfer",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employee%20Transfer",
     "listStatus": 200,
     "listError": null,
@@ -596,6 +710,7 @@
   {
     "name": "Employment Type",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Employment%20Type",
     "listStatus": 200,
     "listError": null,
@@ -641,6 +756,7 @@
   {
     "name": "Exit Interview",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Exit%20Interview",
     "listStatus": 200,
     "listError": null,
@@ -709,6 +825,7 @@
   {
     "name": "Expense Claim",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Expense%20Claim",
     "listStatus": 200,
     "listError": null,
@@ -830,6 +947,7 @@
   {
     "name": "Expense Claim Type",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Expense%20Claim%20Type",
     "listStatus": 200,
     "listError": null,
@@ -879,6 +997,7 @@
   {
     "name": "Full and Final Statement",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Full%20and%20Final%20Statement",
     "listStatus": 200,
     "listError": null,
@@ -894,6 +1013,7 @@
   {
     "name": "Goal",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Goal",
     "listStatus": 200,
     "listError": null,
@@ -909,6 +1029,7 @@
   {
     "name": "Gratuity",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Gratuity",
     "listStatus": 200,
     "listError": null,
@@ -924,6 +1045,7 @@
   {
     "name": "Gratuity Rule",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Gratuity%20Rule",
     "listStatus": 200,
     "listError": null,
@@ -992,6 +1114,7 @@
   {
     "name": "Grievance Type",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Grievance%20Type",
     "listStatus": 200,
     "listError": null,
@@ -1007,6 +1130,7 @@
   {
     "name": "Holiday List Assignment",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Holiday%20List%20Assignment",
     "listStatus": 200,
     "listError": null,
@@ -1056,8 +1180,85 @@
     "isValid": true
   },
   {
+    "name": "HR Settings",
+    "module": "HR",
+    "isSingle": true,
+    "listEndpoint": null,
+    "listStatus": null,
+    "listError": null,
+    "recordCount": 1,
+    "records": [],
+    "detailEndpoint": "/api/resource/HR%20Settings/HR%20Settings",
+    "detailStatus": 200,
+    "detailError": null,
+    "fields": [
+      "name",
+      "owner",
+      "modified",
+      "modified_by",
+      "docstatus",
+      "idx",
+      "emp_created_by",
+      "standard_working_hours",
+      "send_work_anniversary_reminders",
+      "send_birthday_reminders",
+      "send_holiday_reminders",
+      "frequency",
+      "auto_leave_encashment",
+      "leave_approver_mandatory_in_leave_application",
+      "prevent_self_leave_approval",
+      "show_leaves_of_all_department_members_in_calendar",
+      "send_leave_notification",
+      "restrict_backdated_leave_application",
+      "expense_approver_mandatory_in_expense_claim",
+      "prevent_self_expense_approval",
+      "unlink_payment_on_cancellation_of_employee_advance",
+      "allow_multiple_shift_assignments",
+      "allow_employee_checkin_from_mobile_app",
+      "allow_geolocation_tracking",
+      "check_vacancies",
+      "send_interview_reminder",
+      "remind_before",
+      "send_interview_feedback_reminder",
+      "doctype"
+    ],
+    "sampleData": {
+      "name": "HR Settings",
+      "owner": "Administrator",
+      "modified": "2026-06-19 12:43:36.847678",
+      "modified_by": "Administrator",
+      "docstatus": 0,
+      "idx": "0",
+      "emp_created_by": "Naming Series",
+      "standard_working_hours": 0,
+      "send_work_anniversary_reminders": 1,
+      "send_birthday_reminders": 0,
+      "send_holiday_reminders": 1,
+      "frequency": "Weekly",
+      "auto_leave_encashment": 0,
+      "leave_approver_mandatory_in_leave_application": 1,
+      "prevent_self_leave_approval": 0,
+      "show_leaves_of_all_department_members_in_calendar": 0,
+      "send_leave_notification": 1,
+      "restrict_backdated_leave_application": 0,
+      "expense_approver_mandatory_in_expense_claim": 1,
+      "prevent_self_expense_approval": 0,
+      "unlink_payment_on_cancellation_of_employee_advance": 0,
+      "allow_multiple_shift_assignments": 0,
+      "allow_employee_checkin_from_mobile_app": 1,
+      "allow_geolocation_tracking": 0,
+      "check_vacancies": 0,
+      "send_interview_reminder": 0,
+      "remind_before": "00:15:00",
+      "send_interview_feedback_reminder": 0,
+      "doctype": "HR Settings"
+    },
+    "isValid": true
+  },
+  {
     "name": "Identification Document Type",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Identification%20Document%20Type",
     "listStatus": 200,
     "listError": null,
@@ -1073,6 +1274,7 @@
   {
     "name": "Income Tax Slab",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Income%20Tax%20Slab",
     "listStatus": 200,
     "listError": null,
@@ -1088,6 +1290,7 @@
   {
     "name": "Interest",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Interest",
     "listStatus": 200,
     "listError": null,
@@ -1103,6 +1306,7 @@
   {
     "name": "Interview",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Interview",
     "listStatus": 200,
     "listError": null,
@@ -1118,6 +1322,7 @@
   {
     "name": "Interview Feedback",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Interview%20Feedback",
     "listStatus": 200,
     "listError": null,
@@ -1133,6 +1338,7 @@
   {
     "name": "Interview Round",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Interview%20Round",
     "listStatus": 200,
     "listError": null,
@@ -1148,6 +1354,7 @@
   {
     "name": "Interview Type",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Interview%20Type",
     "listStatus": 200,
     "listError": null,
@@ -1163,6 +1370,7 @@
   {
     "name": "Job Applicant",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Job%20Applicant",
     "listStatus": 200,
     "listError": null,
@@ -1226,6 +1434,7 @@
   {
     "name": "Job Applicant Source",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Job%20Applicant%20Source",
     "listStatus": 200,
     "listError": null,
@@ -1271,6 +1480,7 @@
   {
     "name": "Job Offer",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Job%20Offer",
     "listStatus": 200,
     "listError": null,
@@ -1324,6 +1534,7 @@
   {
     "name": "Job Offer Term Template",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Job%20Offer%20Term%20Template",
     "listStatus": 200,
     "listError": null,
@@ -1339,6 +1550,7 @@
   {
     "name": "Job Opening",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Job%20Opening",
     "listStatus": 200,
     "listError": null,
@@ -1414,6 +1626,7 @@
   {
     "name": "Job Opening Template",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Job%20Opening%20Template",
     "listStatus": 200,
     "listError": null,
@@ -1429,6 +1642,7 @@
   {
     "name": "Job Requisition",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Job%20Requisition",
     "listStatus": 200,
     "listError": null,
@@ -1444,6 +1658,7 @@
   {
     "name": "KRA",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/KRA",
     "listStatus": 200,
     "listError": null,
@@ -1459,6 +1674,7 @@
   {
     "name": "Leave Adjustment",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Adjustment",
     "listStatus": 200,
     "listError": null,
@@ -1474,6 +1690,7 @@
   {
     "name": "Leave Allocation",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Allocation",
     "listStatus": 200,
     "listError": null,
@@ -1549,6 +1766,7 @@
   {
     "name": "Leave Application",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Application",
     "listStatus": 200,
     "listError": null,
@@ -1624,6 +1842,7 @@
   {
     "name": "Leave Block List",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Block%20List",
     "listStatus": 200,
     "listError": null,
@@ -1637,8 +1856,51 @@
     "isValid": true
   },
   {
+    "name": "Leave Control Panel",
+    "module": "HR",
+    "isSingle": true,
+    "listEndpoint": null,
+    "listStatus": null,
+    "listError": null,
+    "recordCount": 1,
+    "records": [],
+    "detailEndpoint": "/api/resource/Leave%20Control%20Panel/Leave%20Control%20Panel",
+    "detailStatus": 200,
+    "detailError": null,
+    "fields": [
+      "name",
+      "owner",
+      "modified",
+      "modified_by",
+      "docstatus",
+      "idx",
+      "dates_based_on",
+      "from_date",
+      "carry_forward",
+      "allocate_based_on_leave_policy",
+      "no_of_days",
+      "doctype"
+    ],
+    "sampleData": {
+      "name": "Leave Control Panel",
+      "owner": "Administrator",
+      "modified": "2026-06-19 12:43:27.598723",
+      "modified_by": "Administrator",
+      "docstatus": 0,
+      "idx": "0",
+      "dates_based_on": "Leave Period",
+      "from_date": "2026-06-19",
+      "carry_forward": 1,
+      "allocate_based_on_leave_policy": 1,
+      "no_of_days": 0,
+      "doctype": "Leave Control Panel"
+    },
+    "isValid": true
+  },
+  {
     "name": "Leave Encashment",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Encashment",
     "listStatus": 200,
     "listError": null,
@@ -1654,6 +1916,7 @@
   {
     "name": "Leave Ledger Entry",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Ledger%20Entry",
     "listStatus": 200,
     "listError": null,
@@ -1721,6 +1984,7 @@
   {
     "name": "Leave Period",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Period",
     "listStatus": 200,
     "listError": null,
@@ -1736,6 +2000,7 @@
   {
     "name": "Leave Policy",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Policy",
     "listStatus": 200,
     "listError": null,
@@ -1919,6 +2184,7 @@
   {
     "name": "Leave Policy Assignment",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Policy%20Assignment",
     "listStatus": 200,
     "listError": null,
@@ -1980,6 +2246,7 @@
   {
     "name": "Leave Type",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Leave%20Type",
     "listStatus": 200,
     "listError": null,
@@ -2067,6 +2334,7 @@
   {
     "name": "Offer Term",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Offer%20Term",
     "listStatus": 200,
     "listError": null,
@@ -2112,6 +2380,7 @@
   {
     "name": "Overtime Slip",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Overtime%20Slip",
     "listStatus": 200,
     "listError": null,
@@ -2127,6 +2396,7 @@
   {
     "name": "Overtime Type",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Overtime%20Type",
     "listStatus": 200,
     "listError": null,
@@ -2142,6 +2412,7 @@
   {
     "name": "Payroll Correction",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Payroll%20Correction",
     "listStatus": 200,
     "listError": null,
@@ -2157,6 +2428,7 @@
   {
     "name": "Payroll Entry",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Payroll%20Entry",
     "listStatus": 200,
     "listError": null,
@@ -2337,6 +2609,7 @@
   {
     "name": "Payroll Period",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Payroll%20Period",
     "listStatus": 200,
     "listError": null,
@@ -2350,8 +2623,67 @@
     "isValid": true
   },
   {
+    "name": "Payroll Settings",
+    "module": "Payroll",
+    "isSingle": true,
+    "listEndpoint": null,
+    "listStatus": null,
+    "listError": null,
+    "recordCount": 1,
+    "records": [],
+    "detailEndpoint": "/api/resource/Payroll%20Settings/Payroll%20Settings",
+    "detailStatus": 200,
+    "detailError": null,
+    "fields": [
+      "name",
+      "owner",
+      "modified",
+      "modified_by",
+      "docstatus",
+      "idx",
+      "payroll_based_on",
+      "consider_unmarked_attendance_as",
+      "include_holidays_in_total_working_days",
+      "consider_marked_attendance_on_holidays",
+      "max_working_hours_against_timesheet",
+      "daily_wages_fraction_for_half_day",
+      "disable_rounded_total",
+      "show_leave_balances_in_salary_slip",
+      "email_salary_slip_to_employee",
+      "encrypt_salary_slips_in_emails",
+      "process_payroll_accounting_entry_based_on_employee",
+      "mandatory_benefit_application",
+      "create_overtime_slip",
+      "doctype"
+    ],
+    "sampleData": {
+      "name": "Payroll Settings",
+      "owner": "Administrator",
+      "modified": "2026-06-19 12:43:27.340537",
+      "modified_by": "Administrator",
+      "docstatus": 0,
+      "idx": "0",
+      "payroll_based_on": "Leave",
+      "consider_unmarked_attendance_as": "Present",
+      "include_holidays_in_total_working_days": 0,
+      "consider_marked_attendance_on_holidays": 0,
+      "max_working_hours_against_timesheet": 0,
+      "daily_wages_fraction_for_half_day": 0.5,
+      "disable_rounded_total": 0,
+      "show_leave_balances_in_salary_slip": 0,
+      "email_salary_slip_to_employee": 1,
+      "encrypt_salary_slips_in_emails": 0,
+      "process_payroll_accounting_entry_based_on_employee": 0,
+      "mandatory_benefit_application": 0,
+      "create_overtime_slip": 0,
+      "doctype": "Payroll Settings"
+    },
+    "isValid": true
+  },
+  {
     "name": "Purpose of Travel",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Purpose%20of%20Travel",
     "listStatus": 200,
     "listError": null,
@@ -2367,6 +2699,7 @@
   {
     "name": "PWA Notification",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/PWA%20Notification",
     "listStatus": 200,
     "listError": null,
@@ -2420,6 +2753,7 @@
   {
     "name": "Retention Bonus",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Retention%20Bonus",
     "listStatus": 200,
     "listError": null,
@@ -2435,6 +2769,7 @@
   {
     "name": "Salary Component",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Salary%20Component",
     "listStatus": 200,
     "listError": null,
@@ -2528,6 +2863,7 @@
   {
     "name": "Salary Slip",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Salary%20Slip",
     "listStatus": 200,
     "listError": null,
@@ -2543,6 +2879,7 @@
   {
     "name": "Salary Structure",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Salary%20Structure",
     "listStatus": 200,
     "listError": null,
@@ -2754,6 +3091,7 @@
   {
     "name": "Salary Structure Assignment",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Salary%20Structure%20Assignment",
     "listStatus": 200,
     "listError": null,
@@ -2833,6 +3171,7 @@
   {
     "name": "Salary Withholding",
     "module": "Payroll",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Salary%20Withholding",
     "listStatus": 200,
     "listError": null,
@@ -2848,6 +3187,7 @@
   {
     "name": "Shift Assignment",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Shift%20Assignment",
     "listStatus": 200,
     "listError": null,
@@ -2903,8 +3243,45 @@
     "isValid": true
   },
   {
+    "name": "Shift Assignment Tool",
+    "module": "HR",
+    "isSingle": true,
+    "listEndpoint": null,
+    "listStatus": null,
+    "listError": null,
+    "recordCount": 1,
+    "records": [],
+    "detailEndpoint": "/api/resource/Shift%20Assignment%20Tool/Shift%20Assignment%20Tool",
+    "detailStatus": 200,
+    "detailError": null,
+    "fields": [
+      "name",
+      "owner",
+      "modified",
+      "modified_by",
+      "docstatus",
+      "idx",
+      "action",
+      "status",
+      "doctype"
+    ],
+    "sampleData": {
+      "name": "Shift Assignment Tool",
+      "owner": "Administrator",
+      "modified": "2026-06-19 12:43:27.299928",
+      "modified_by": "Administrator",
+      "docstatus": 0,
+      "idx": "0",
+      "action": "Assign Shift",
+      "status": "Active",
+      "doctype": "Shift Assignment Tool"
+    },
+    "isValid": true
+  },
+  {
     "name": "Shift Location",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Shift%20Location",
     "listStatus": 200,
     "listError": null,
@@ -2920,6 +3297,7 @@
   {
     "name": "Shift Request",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Shift%20Request",
     "listStatus": 200,
     "listError": null,
@@ -2935,6 +3313,7 @@
   {
     "name": "Shift Schedule",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Shift%20Schedule",
     "listStatus": 200,
     "listError": null,
@@ -2950,6 +3329,7 @@
   {
     "name": "Shift Schedule Assignment",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Shift%20Schedule%20Assignment",
     "listStatus": 200,
     "listError": null,
@@ -2965,6 +3345,7 @@
   {
     "name": "Shift Type",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Shift%20Type",
     "listStatus": 200,
     "listError": null,
@@ -3044,6 +3425,7 @@
   {
     "name": "Skill",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Skill",
     "listStatus": 200,
     "listError": null,
@@ -3059,6 +3441,7 @@
   {
     "name": "Staffing Plan",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Staffing%20Plan",
     "listStatus": 200,
     "listError": null,
@@ -3074,6 +3457,7 @@
   {
     "name": "Training Event",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Training%20Event",
     "listStatus": 200,
     "listError": null,
@@ -3143,6 +3527,7 @@
   {
     "name": "Training Feedback",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Training%20Feedback",
     "listStatus": 200,
     "listError": null,
@@ -3158,6 +3543,7 @@
   {
     "name": "Training Program",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Training%20Program",
     "listStatus": 200,
     "listError": null,
@@ -3173,6 +3559,7 @@
   {
     "name": "Training Result",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Training%20Result",
     "listStatus": 200,
     "listError": null,
@@ -3188,6 +3575,7 @@
   {
     "name": "Travel Request",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Travel%20Request",
     "listStatus": 200,
     "listError": null,
@@ -3201,8 +3589,41 @@
     "isValid": true
   },
   {
+    "name": "Upload Attendance",
+    "module": "HR",
+    "isSingle": true,
+    "listEndpoint": null,
+    "listStatus": null,
+    "listError": null,
+    "recordCount": 1,
+    "records": [],
+    "detailEndpoint": "/api/resource/Upload%20Attendance/Upload%20Attendance",
+    "detailStatus": 200,
+    "detailError": null,
+    "fields": [
+      "name",
+      "owner",
+      "modified",
+      "modified_by",
+      "docstatus",
+      "idx",
+      "doctype"
+    ],
+    "sampleData": {
+      "name": "Upload Attendance",
+      "owner": "Administrator",
+      "modified": "2026-06-19 12:43:27.586492",
+      "modified_by": "Administrator",
+      "docstatus": 0,
+      "idx": "0",
+      "doctype": "Upload Attendance"
+    },
+    "isValid": true
+  },
+  {
     "name": "Vehicle Log",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Vehicle%20Log",
     "listStatus": 200,
     "listError": null,
@@ -3218,6 +3639,7 @@
   {
     "name": "Vehicle Service Item",
     "module": "HR",
+    "isSingle": false,
     "listEndpoint": "/api/resource/Vehicle%20Service%20Item",
     "listStatus": 200,
     "listError": null,
