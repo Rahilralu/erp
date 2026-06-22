@@ -1,0 +1,4 @@
+FROM frappe/erpnext:v16.23.0
+USER frappe
+WORKDIR /home/frappe/frappe-bench
+RUN bench get-app https://github.com/frappe/hrms --branch version-16
